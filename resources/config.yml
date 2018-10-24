@@ -1,0 +1,22 @@
+---
+# Config by tim03we´
+# Soon there will also be a task to show ranks, as well as money, TPS and much more.
+#
+# The Title for your Scoreboard
+title: 'Your Title'
+#
+# You have 10 Lines for all your Messages, you want to have an empty Line? Than write ' '..
+# You want to have more empty Lines? Than write this same with more Spaces.
+line1: 'Line 1'
+line2: 'Line 2'
+line3: 'Line 3'
+line4: 'Line 4'
+line5: 'Line 5'
+line6: 'Line 6'
+line7: 'Line 7'
+line8: 'Line 8'
+line9: 'Line 9'
+line10: 'Line 10'
+# Config by tim03we
+# Thanks for using my Plugin!
+...
