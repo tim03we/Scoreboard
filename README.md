@@ -1,4 +1,29 @@
-# Scoreboard
+# Scoreboard (English)
+
+A scoreboard plugin with different features! The features are listed here.
+- You can specify in the config which group system you want to use. ("PurePerms" or "GlobalGroups")
+- You can decide in the Config how often the scoreboard should update. (In seconds)
+- You can deactivate or activate the scoreboard in the config.
+
+# Scoreboard functions (settings.yml)
+
+Function | description
+---------------- | ---------------------------------
+{money} | Show your money status
+{group} | Let's show you your group
+{ping} | Current player Ping
+{online_players} | Current Online Players
+{max_players} | Maximum player number
+{name} | InGame name
+{registered} | Registered players
+{tps} | server load
+{x} | X position
+{y} | Y position
+{z} | Z position
+
+----------------
+
+# Scoreboard (German)
 
 Ein Scoreboard Plugin mit verschiedenen Features! Die Features werden hier aufegelistet.
 - Du kannst in der Config bestimmen welches Gruppen System du nutzen möchtest. ("PurePerms" oder "GlobalGroups")
@@ -23,7 +48,7 @@ Function         | Description
 
 ----------------
 
-Falls Probleme auftauchen sollten, erstelle ein Issue oder schreibe uns auf Discord an.
+If problems arise, create an issue or write us on Discord.
 
 | Discord |
 | :---: |
