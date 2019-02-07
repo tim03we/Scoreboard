@@ -1,6 +1,7 @@
-main: tim03we\sb\Scoreboard
-api: [3.0.0, 4.0.0]
+main: tim03we\scoreboard\Scoreboard
+api: [3.0.0, 3.5.9, 3.6.0, 4.0.0]
 
 name: Scoreboard
-version: 1
+version: 1.4.3
 author: tim03we
+description: Scoreboard Plugin for PocketMine-MP
