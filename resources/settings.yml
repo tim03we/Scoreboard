@@ -1,0 +1,50 @@
+---
+# Config by tim03we
+
+# Activate or deactivate the Scoreboard Plugin
+# Use "true" for activate or "false" for deactivate
+Scoreboard Activate: "true"
+
+# You can choose between two groups of systems, between PurePerms and GlobalGroups
+# Use "PurePerms" or "GlobalGroups"
+GroupSystem: "PurePerms"
+
+# After how many ticks should the scoreboard update? (20 Ticks = 1 second)
+Update Task: "60"
+
+# The Title for your Scoreboard
+title: 'Your Title'
+
+# You have 15 lines for your scoreboard here
+# To leave a line empty, use a few spaces, if it should be the same for other lines use a different number of spaces
+line1: 'Line 1'
+line2: 'Line 2'
+line3: 'Line 3'
+line4: 'Line 4'
+line5: 'Line 5'
+line6: 'Line 6'
+line7: 'Line 7'
+line8: 'Line 8'
+line9: 'Line 9'
+line10: 'Line 10'
+line11: 'Line 11'
+line12: 'Line 12'
+line13: 'Line 13'
+line14: 'Line 14'
+line15: 'Line 15'
+
+#   {money}   // Show your money status
+#   {group}   // Show your rank
+#   {ping}   // Let me show you your ping
+#   {online_players}   // See how many players are online right now
+#   {max_players}   // Let the maximum player count show you
+#   {name}   // Let's show you your in-game name
+#   {registered}   // See how many players are registered on the server
+#   {tps}   // Let you see the server usage
+#   {x}   // Show the X coordinate
+#   {y}   // Show the Y coordinate
+#   {z}   // Show the Z coordinate
+
+# Config by tim03we
+# Thanks for using my Plugin!
+...
