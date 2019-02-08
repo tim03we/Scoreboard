@@ -29,6 +29,7 @@ class ScoreboardTask extends Task {
             if($settings->get("GroupSystem") == "GlobalGroups") {
                 $ggapi = new GGAPI(GlobalGroups::getInstance());
                 $pinfo = $ggapi->getPlayerInfo($player);
+                $group = $pinfo['Group'];
             }
             $playercount = count($this->plugin->getServer()->getOnlinePlayers());
 			$money = $this->plugin->getServer()->getPluginManager()->getPlugin('EconomyAPI')->myMoney($player);
