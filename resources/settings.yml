@@ -47,6 +47,7 @@ line15: 'Line 15'
 #   {x}   // Show the X coordinate
 #   {y}   // Show the Y coordinate
 #   {z}   // Show the Z coordinate
+#   {player_ip}   // Show your IP Adress
 
 # Config by tim03we
 # Thanks for using my Plugin!

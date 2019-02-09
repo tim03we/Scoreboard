@@ -43,24 +43,25 @@ class ScoreboardTask extends Task {
             $ping = $player->getPing();
             $maxpcount = Server::getInstance()->getMaxPlayers();
             $tps = Server::getInstance()->getTicksPerSecond();
+            $pip = $player->getAddress();
 
             $this->plugin->rmScoreboard($player, "objektName");
-            $this->plugin->createScoreboard($player, $this->convert($settings->get("title"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 1, $this->convert($settings->get("line1"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 2, $this->convert($settings->get("line2"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 3, $this->convert($settings->get("line3"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 4, $this->convert($settings->get("line4"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 5, $this->convert($settings->get("line5"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 6, $this->convert($settings->get("line6"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 7, $this->convert($settings->get("line7"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 8, $this->convert($settings->get("line8"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 9, $this->convert($settings->get("line9"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 10, $this->convert($settings->get("line10"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 11, $this->convert($settings->get("line11"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 12, $this->convert($settings->get("line12"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 13, $this->convert($settings->get("line13"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 14, $this->convert($settings->get("line14"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
-            $this->plugin->setScoreboardEntry($player, 15, $this->convert($settings->get("line15"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps), "objektName");
+            $this->plugin->createScoreboard($player, $this->convert($settings->get("title"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 1, $this->convert($settings->get("line1"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 2, $this->convert($settings->get("line2"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 3, $this->convert($settings->get("line3"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 4, $this->convert($settings->get("line4"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 5, $this->convert($settings->get("line5"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 6, $this->convert($settings->get("line6"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 7, $this->convert($settings->get("line7"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 8, $this->convert($settings->get("line8"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 9, $this->convert($settings->get("line9"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 10, $this->convert($settings->get("line10"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 11, $this->convert($settings->get("line11"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 12, $this->convert($settings->get("line12"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 13, $this->convert($settings->get("line13"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 14, $this->convert($settings->get("line14"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
+            $this->plugin->setScoreboardEntry($player, 15, $this->convert($settings->get("line15"), $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip), "objektName");
         }
     }
 
@@ -76,6 +77,7 @@ class ScoreboardTask extends Task {
         $string = str_replace("{name}", $name, $string);
         $string = str_replace("{ping}", $ping, $string);
         $string = str_replace("{tps}", $tps, $string);
+        $string = str_replace("{player_ip}", $pip, $string);
         return $string;
 	}
 }
