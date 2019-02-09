@@ -48,6 +48,7 @@ line15: 'Line 15'
 #   {y}   // Show the Y coordinate
 #   {z}   // Show the Z coordinate
 #   {player_ip}   // Show your IP Adress
+#   {level_name}   // Look in which world you are
 
 # Config by tim03we
 # Thanks for using my Plugin!
