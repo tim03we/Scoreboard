@@ -31,10 +31,9 @@ class Scoreboard extends PluginBase implements Listener {
                 $this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin('Scoreboard'));
             }
         } else if($settings->get("EconomyAPI") == "true") {
-                if(!$this->getServer()->getPluginManager()->getPlugin("EconomyAPI")){
-                    $this->getLogger()->critical("EconomyAPI does not exist!");
-                    $this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin('Scoreboard'));
-                }
+            if(!$this->getServer()->getPluginManager()->getPlugin("EconomyAPI")){
+                $this->getLogger()->critical("EconomyAPI does not exist!");
+                $this->getServer()->getPluginManager()->disablePlugin($this->getServer()->getPluginManager()->getPlugin('Scoreboard'));
             }
         } else if($settings->get("Scoreboard Activate") == "false") {
             $this->getLogger()->notice("The plugin was deactivated because it was disabled in the config!");
