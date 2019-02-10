@@ -66,7 +66,7 @@ class ScoreboardTask extends Task {
         }
     }
 
-    public function convert(string $string, int $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps): string{
+    public function convert(string $string, int $money, $group, $xpos, $ypos, $zpos, $playercount, $maxpcount, $registered, $name, $ping, $tps, $pip, $lname): string{
         $string = str_replace("{money}", $money, $string);
         $string = str_replace("{group}", $group, $string);
         $string = str_replace("{x}", $xpos, $string);
