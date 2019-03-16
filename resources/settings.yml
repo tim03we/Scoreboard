@@ -10,7 +10,7 @@ Scoreboard Activate: "true"
 GroupSystem: "PurePerms"
 
 # Decide if EconomyAPI should be used or not. Use "true" or "false"
-EconomyAPI: "false"
+EconomyAPI: false
 
 # After how many ticks should the scoreboard update? (20 Ticks = 1 second)
 Update Task: "60"
